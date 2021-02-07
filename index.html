@@ -3,11 +3,42 @@
 <head>
 <title>TRI POLOSKI</title>
 </head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
 <style type="text/css">
 body {
 	background-color: #4578ad;
 }
 </style>
+<style>
+.error{
+	width:847px;
+	height:576px;
+	position:absolute;
+border-radius: 8px;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	background:url(https://i.imgur.com/73ucdUU.png);
+}
+.error2{
+	width:160px;
+	height:90px;
+	position:absolute;
+border-radius: 8px;
+box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+	background:url(https://i.imgur.com/p60VbDy.gif);
+}
+audio { display:none;}
+</style>
+<div class="f"> </div>
+<script >
+setInterval(function () {
+  w = Math.floor(Math.random() * ($(window).outerWidth() - 0 + 1)) - 150;
+  h = Math.floor(Math.random() * ($(window).outerHeight() - 0 + 1)) - 150;
+  w2 = Math.floor(Math.random() * ($(window).outerWidth() - 0 + 1)) - 50;
+  h2 = Math.floor(Math.random() * ($(window).outerHeight() - 0 + 1)) - 50;
+  $('body').append('<div class="error" style="top:' + h + 'px; left:' + w + 'px;"></div>');
+ $('body').append('<div class="error2" style="top:' + h2+ 'px; left:' + w2 + 'px;"></div>');
+}, 100);
+</script>
 <body>
 <center><img width="560" height="315" src="https://media.tenor.com/images/69b1023782f9e067e4cd76ec125606e3/tenor.gif"></center>
 <center><iframe width="560" height="315" src="https://www.youtube.com/embed/QiFBgtgUtfw?controls=0?autoplay=1&origin=phrixion.ru" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></center>
